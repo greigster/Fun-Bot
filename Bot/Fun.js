@@ -72,7 +72,7 @@ Funbot.settings.ruleSkip = true;
 Funbot.settings.removedFilter = true;
 
 // Admins ID
-Funbot.admins = ["50aeaeb6c3b97a2cb4c25bd2"];
+Funbot.admins = ["527f9c8c96fba56a2e859f4c"];
 
 // Random announcements.
 var announcements = 
@@ -103,7 +103,7 @@ var blockedArtists = [
 
 // Filter Keywords
 Funbot.filters.beggerWords = ["fanme","fan me","fan4fan","fan 4 fan","fan pls","fans please","more fan","fan back","give me fans","gimme fans","need fan","fan for fan"];
-Funbot.filters.commandWords = [".linkin",".say",".test",".ping",".marco",".reward",".add",".addsong",".flipcoin",".catfact",".dogfact",".hug",".8ball",".fortune",".songlink",".download",".help",".whywoot",".whymeh",".props",".votes",".woot",".meh",".version",".userstats @",".mystats",".source",".roomstats",".roomstats2",".register",".join",".leave",".roll"];
+Funbot.filters.commandWords = [".",".linkin",".say",".test",".ping",".marco",".reward",".add",".addsong",".flipcoin",".catfact",".dogfact",".hug",".8ball",".fortune",".songlink",".download",".help",".whywoot",".whymeh",".props",".votes",".woot",".meh",".version",".userstats @",".mystats",".source",".roomstats",".roomstats2",".register",".join",".leave",".roll"];
 
 
 // Fun misc
@@ -614,11 +614,11 @@ function chatMe(msg)
  
                    case "download":
                         if(typeof command[1] == "undefined"){
-                            API.sendChat("Download your song free here: http://www.vebsi.com/");
+                            API.sendChat("Sorry unknown command");
                         }else if(command[1].indexOf("@") > -1){
-                            API.sendChat(command[1]+" Download your song free here: http://www.vebsi.com/");
+                            API.sendChat(command[1]+" Sorry unknown commnad);
                         }else{
-                            API.sendChat("Download your song free here: http://www.vebsi.com/");
+                            API.sendChat("Sorry unknown command");
                         }
                         break;
  
